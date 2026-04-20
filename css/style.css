@@ -72,6 +72,7 @@
 }
 
 html {
+    overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1646,7 +1647,8 @@ input, textarea, select {
   .nav-links {
     position: fixed;
     inset: 0;
-    background: rgba(7, 7, 13, 0.97);
+    background: rgba(0, 0, 0, 0.98);
+      z-index: 1000;
     backdrop-filter: blur(20px);
     flex-direction: column;
     justify-content: center;
@@ -2618,3 +2620,4 @@ html.lenis, html.lenis body {
   background: var(--brand-red);
   border-color: var(--brand-red);
 }
+
