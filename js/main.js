@@ -1046,7 +1046,7 @@ tiltCards.forEach(card => {
 const soundHover = document.getElementById('sound-hover');
 if (soundHover) soundHover.volume = 0.03;
 
-const soundElementsHover = document.querySelectorAll('button, .btn, .calc-tab, .portfolio-item');
+const soundElementsHover = document.querySelectorAll('button, .btn, .calc-tab');
 soundElementsHover.forEach(el => {
   el.addEventListener('mouseenter', () => {
     if(soundHover) {
