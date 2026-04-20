@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JenAI — AI-продакшн студия | Видео с ИИ под ключ</title>
+  <meta name="description" content="AI-продакшн студия полного цикла. Создаём видеоролики, клипы и рекламу с помощью ИИ — быстрее и дешевле классического продакшна. От идеи до результата.">
+  <meta name="keywords" content="AI продакшн, видео с искусственным интеллектом, создание роликов, AI реклама, нейросеть видео, JenAI">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JenAI — AI-продакшн студия | Видео с ИИ под ключ">
+  <meta property="og:description" content="AI-продакшн студия полного цикла. Создаём видеоролики, клипы и рекламу с помощью ИИ — быстрее и дешевле классического продакшна.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jenai.ru/">
+  <meta property="og:image" content="https://jenai.ru/og-image.jpg">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JenAI — AI-продакшн студия">
+  <meta name="twitter:description" content="Создаём видеоролики, клипы и рекламу с помощью ИИ — быстрее и дешевле.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237C5CFC'/><text y='24' x='5' font-size='22' font-weight='900' font-family='Inter,Arial' fill='white'>J</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeAgency",
+    "name": "JenAI",
+    "description": "AI-продакшн студия полного цикла. Создаём видеоролики, клипы и рекламу с помощью искусственного интеллекта.",
+    "url": "https://jenai.ru",
+    "telephone": "+79165219649",
+    "email": "info@jenai.ru",
+    "serviceType": "AI Video Production",
+    "areaServed": "RU"
+  }
+  </script>
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="scroll-progress-container"><div id="scroll-progress" class="scroll-progress-bar"></div></div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"><span class="cursor-text" id="cursor-text"></span></div>
+
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<nav class="nav" id="nav" role="navigation" aria-label="Главная навигация">
+  <div class="container">
+    <a href="#home" class="nav-logo" aria-label="JenAI — на главную">
+      <div class="logo-icon" aria-hidden="true">J</div>
+      <span>Jen<span class="nav-logo-ai">AI</span></span>
+    </a>
+
+    <ul class="nav-links" id="nav-links" role="menubar">
+      <li role="none"><a href="#services" role="menuitem">Услуги</a></li>
+      <li role="none"><a href="#portfolio" role="menuitem">Портфолио</a></li>
+      <li role="none"><a href="#process" role="menuitem">Как работаем</a></li>
+      <li role="none"><a href="#pricing" role="menuitem">Цены</a></li>
+      <li role="none"><a href="#contact" role="menuitem">Контакты</a></li>
+      <li role="none"><a href="oferta.html" role="menuitem">Оферта</a></li>
+    </ul>
+
+    <button class="btn btn-primary nav-cta open-quiz-btn" id="nav-cta-btn">Обсудить проект</button>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section class="hero" id="home" aria-label="Главный экран">
+  <div class="hero-bg" aria-hidden="true">
+    <video autoplay muted loop playsinline class="hero-video-bg">
+      <source src="JenAi/ag1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        AI Production Studio нового поколения
+      </div>
+
+      <h1 class="hero-title reveal decrypt-text">
+        Создаём видео<br>
+        с помощью <span class="gradient-text">искусственного<br>интеллекта</span>
+      </h1>
+
+      <p class="hero-subtitle reveal">
+        Рекламные ролики, клипы, бренд-контент и кино — быстрее и дешевле классического продакшна. Полный цикл от идеи до готового видео.
+      </p>
+
+      <div class="hero-actions reveal">
+        <button class="btn btn-primary open-quiz-btn" id="hero-cta-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.1A16 16 0 0014.9 15.09l.46-.46a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Рассчитать проект
+        </button>
+        <a href="#portfolio" class="btn btn-secondary" id="hero-portfolio-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Смотреть работы
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="hero-stat">
+          <span class="hero-stat-value" data-count="120">0</span>
+          <span class="hero-stat-label">Проектов выполнено</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value" data-count="85">0</span>
+          <span class="hero-stat-label">Довольных клиентов</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value" data-count="3" data-suffix="x">0</span>
+          <span class="hero-stat-label">Быстрее классики</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value" data-count="70" data-suffix="%">0</span>
+          <span class="hero-stat-label">Экономия бюджета</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     TRUST MARQUEE
+     ============================================ -->
+<div class="trust-marquee" aria-hidden="true">
+  <div class="marquee-content">
+    <span>Нам доверяют бренды нового поколения</span>
+    <span class="marquee-dot"></span>
+    <span>Создаем видео, которое работает</span>
+    <span class="marquee-dot"></span>
+    <span>FinTech</span>
+    <span class="marquee-dot"></span>
+    <span>Auto Brands</span>
+    <span class="marquee-dot"></span>
+    <span>Creative Agencies</span>
+    <span class="marquee-dot"></span>
+    <span>AI Startups</span>
+    <span class="marquee-dot"></span>
+    <span>Нам доверяют бренды нового поколения</span>
+    <span class="marquee-dot"></span>
+    <span>Создаем видео, которое работает</span>
+    <span class="marquee-dot"></span>
+    <span>FinTech</span>
+    <span class="marquee-dot"></span>
+    <span>Auto Brands</span>
+    <span class="marquee-dot"></span>
+    <span>Creative Agencies</span>
+    <span class="marquee-dot"></span>
+    <span>AI Startups</span>
+    <span class="marquee-dot"></span>
+  </div>
+</div>
+
+<!-- ============================================
+     SERVICES
+     ============================================ -->
+<section class="services" id="services" aria-label="Наши услуги">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">Что мы делаем</p>
+      <h2 class="section-title reveal decrypt-text">Полный спектр <span class="gradient-text">AI-продакшна</span></h2>
+      <p class="section-subtitle reveal">От короткой рекламной вставки до полнометражного кино — всё на базе передовых нейросетей</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <article class="service-card tilt-card reveal" style="--i:0">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>AI Реклама</h3>
+        <p>Рекламные ролики для брендов, продуктов и сервисов. Профессиональный результат без дорогостоящих съёмок и актёров.</p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="service-card tilt-card reveal" style="--i:1">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <h3>AI Клипы</h3>
+        <p>Музыкальные видеоклипы нового формата. Уникальные визуальные миры, синтетические персонажи и кинематографичные сцены.</p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="service-card tilt-card reveal" style="--i:2">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4"/></svg>
+        </div>
+        <h3>AI Кино и сериалы</h3>
+        <p>Короткометражки, тизеры и пилотные эпизоды сериалов. Кино по вашему сценарию без голливудских бюджетов.</p>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="service-card tilt-card reveal" style="--i:0">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Бренд-контент</h3>
+        <p>Презентации, имиджевые ролики, stories и reels для социальных сетей. Контент, который выделяет ваш бренд.</p>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="service-card tilt-card reveal" style="--i:1">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        </div>
+        <h3>AI Тизеры</h3>
+        <p>Атмосферные промо-тизеры для фильмов, игр и продуктов. Максимальный вау-эффект при минимальных затратах.</p>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="service-card tilt-card reveal" style="--i:2">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Синтетические персонажи</h3>
+        <p>AI-аватары и виртуальные ведущие с липсинком для корпоративных видео, обучения и рекламы.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PORTFOLIO
+     ============================================ -->
+<section class="portfolio" id="portfolio" aria-label="Портфолио работ">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">Наши работы</p>
+      <h2 class="section-title reveal decrypt-text">Примеры <span class="gradient-text">AI-продакшна</span></h2>
+      <p class="section-subtitle reveal">Реальные проекты — от концепции до финального ролика</p>
+    </div>
+
+    <div class="portfolio-filters reveal">
+      <button class="filter-btn active" data-filter="all" id="filter-all">Все работы</button>
+      <button class="filter-btn" data-filter="ads" id="filter-ads">Реклама</button>
+      <button class="filter-btn" data-filter="clips" id="filter-clips">Клипы</button>
+      <button class="filter-btn" data-filter="brand" id="filter-brand">Бренд-контент</button>
+      <button class="filter-btn" data-filter="cinema" id="filter-cinema">Кино</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+      <article class="portfolio-item reveal" data-category="ads">
+        <div class="portfolio-thumb-wrap">
+          <div class="portfolio-thumb-bg" style="background: url('JenAi/Обложки/1.jpg') center/cover;">
+            <video muted loop playsinline class="portfolio-hover-vid" preload="none" src="JenAi/Клипы/1.mp4"></video>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h3>KGM SsangYong</h3>
+          <p>Рекламный ролик автомобиля</p>
+        </div>
+      </article>
+
+      <article class="portfolio-item reveal" data-category="clips">
+        <div class="portfolio-thumb-wrap">
+          <div class="portfolio-thumb-bg" style="background: url('JenAi/Обложки/2.jpg') center/cover;">
+            <video muted loop playsinline class="portfolio-hover-vid" preload="none" src="JenAi/Клипы/2.mp4"></video>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h3>Музыкальный клип 2024</h3>
+          <p>AI-клип с синтетическими персонажами</p>
+        </div>
+      </article>
+
+      <article class="portfolio-item reveal" data-category="cinema">
+        <div class="portfolio-thumb-wrap">
+          <div class="portfolio-thumb-bg" style="background: url('JenAi/Обложки/3.jpg') center/cover;">
+            <video muted loop playsinline class="portfolio-hover-vid" preload="none" src="JenAi/Film/1.mp4"></video>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h3>Короткометражка «Нейро»</h3>
+          <p>AI кино, 7 минут</p>
+        </div>
+      </article>
+
+      <article class="portfolio-item reveal" data-category="brand">
+        <div class="portfolio-thumb-wrap">
+          <div class="portfolio-thumb-bg" style="background: url('JenAi/Обложки/4.jpg') center/cover;">
+            <video muted loop playsinline class="portfolio-hover-vid" preload="none" src="JenAi/Клипы/3.mp4"></video>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h3>Имиджевый ролик банка</h3>
+          <p>Корпоративный бренд-контент</p>
+        </div>
+      </article>
+
+      <article class="portfolio-item reveal" data-category="ads">
+        <div class="portfolio-thumb-wrap">
+          <div class="portfolio-thumb-bg" style="background: url('JenAi/Обложки/5.jpg') center/cover;">
+            <video muted loop playsinline class="portfolio-hover-vid" preload="none" src="JenAi/Клипы/4.mp4"></video>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h3>Реклама ювелирного дома</h3>
+          <p>AI fashion реклама</p>
+        </div>
+      </article>
+
+      <article class="portfolio-item reveal" data-category="clips">
+        <div class="portfolio-thumb-wrap">
+          <div class="portfolio-thumb-bg" style="background: url('JenAi/Обложки/6.jpg') center/cover;">
+            <video muted loop playsinline class="portfolio-hover-vid" preload="none" src="JenAi/Клипы/5.mp4"></video>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <div class="portfolio-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <h3>Клип «Галактика»</h3>
+          <p>Cinematic AI музыкальный клип</p>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:48px;" class="reveal">
+      <a href="#contact" class="btn btn-secondary" id="portfolio-cta-btn">Обсудить свой проект</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PROCESS
+     ============================================ -->
+<section class="process" id="process" aria-label="Процесс работы">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">Как мы работаем</p>
+      <h2 class="section-title reveal">5 шагов от идеи <span class="gradient-text">до результата</span></h2>
+      <p class="section-subtitle reveal">Прозрачный процесс без лишних согласований и задержек</p>
+    </div>
+
+    <div class="process-timeline">
+      <div class="process-step reveal" style="--i:0">
+        <div class="step-number">1</div>
+        <h3>Бриф</h3>
+        <p>Обсуждаем задачу, цели, аудиторию и стиль. Заполняем бриф — это бесплатно.</p>
+      </div>
+      <div class="process-step reveal" style="--i:1">
+        <div class="step-number">2</div>
+        <h3>Концепция</h3>
+        <p>Разрабатываем сценарий, раскадровку и визуальную концепцию будущего видео.</p>
+      </div>
+      <div class="process-step reveal" style="--i:2">
+        <div class="step-number">3</div>
+        <h3>Производство</h3>
+        <p>Генерируем видео с помощью лучших AI-моделей. Вы видите прогресс на каждом этапе.</p>
+      </div>
+      <div class="process-step reveal" style="--i:3">
+        <div class="step-number">4</div>
+        <h3>Постпродакшн</h3>
+        <p>Монтаж, цветокоррекция, звук, графика и финальная сборка под ваш формат.</p>
+      </div>
+      <div class="process-step reveal" style="--i:4">
+        <div class="step-number">5</div>
+        <h3>Сдача</h3>
+        <p>Передаём готовый ролик в нужных форматах. Вносим правки до полного утверждения.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     ADVANTAGES
+     ============================================ -->
+<section class="advantages" id="advantages" aria-label="Преимущества AI-продакшна">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">Почему AI?</p>
+      <h2 class="section-title reveal">AI-продакшн vs <span class="gradient-text">классический</span></h2>
+      <p class="section-subtitle reveal">Сравните сами — разница очевидна</p>
+    </div>
+
+    <div class="advantages-grid">
+      <div class="advantage-card reveal">
+        <div class="advantage-icon purple">⚡</div>
+        <div>
+          <h3>В 3× быстрее</h3>
+          <p>Классический продакшн занимает недели и месяцы. Мы делаем ролик за 3–7 дней без потери качества.</p>
+        </div>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="advantage-icon cyan">💰</div>
+        <div>
+          <h3>Экономия до 70%</h3>
+          <p>Никаких расходов на съёмочную группу, аренду студии, актёров и локации. Только творчество и технологии.</p>
+        </div>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="advantage-icon purple">🎨</div>
+        <div>
+          <h3>Безграничный визуал</h3>
+          <p>Любой художественный стиль, фантастические локации, невозможные сцены — AI не знает физических ограничений.</p>
+        </div>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="advantage-icon cyan">🔄</div>
+        <div>
+          <h3>Быстрые итерации</h3>
+          <p>Хотите изменить цвет, стиль или сцену? Правки вносятся за часы, а не недели переработки.</p>
+        </div>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="advantage-icon purple">📈</div>
+        <div>
+          <h3>Масштабируемость</h3>
+          <p>Нужно 10 роликов для разных стран и языков? Мы масштабируем производство без линейного роста затрат.</p>
+        </div>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="advantage-icon cyan">🌐</div>
+        <div>
+          <h3>Полный цикл онлайн</h3>
+          <p>Работаем удалённо с клиентами из любого города и страны. Всё общение и сдача работ — онлайн.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PRICING
+     ============================================ -->
+<section class="pricing" id="pricing" aria-label="Тарифы и цены">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">Стоимость</p>
+      <h2 class="section-title reveal">Прозрачные <span class="gradient-text">цены</span></h2>
+      <p class="section-subtitle reveal">От 150 до 1000 ₽ за секунду готового видео — в зависимости от сложности и формата</p>
+    </div>
+
+    <!-- Pricing Calculator -->
+    <div class="pricing-calculator reveal">
+      <div class="calc-header">
+        <h3>Детальный расчет проекта</h3>
+        <p>Выберите формат и уровень качества, чтобы узнать точную стоимость производства</p>
+      </div>
+      
+      <div class="calc-body">
+        <div class="calc-group">
+          <label>Формат проекта</label>
+          <div class="calc-chips" id="calc-format">
+            <button class="calc-chip active" data-base="150" data-type="Reels / Shorts">📱 Reels / Shorts</button>
+            <button class="calc-chip" data-base="400" data-type="Рекламный ролик">🎯 Рекламный ролик</button>
+            <button class="calc-chip" data-base="800" data-type="Музыкальный клип">🎵 Музыкальный клип</button>
+            <button class="calc-chip" data-base="1500" data-type="Кино / Спецпроект">🎬 Кино / Спецпроект</button>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <label>Уровень ИИ-проработки</label>
+          <div class="calc-tabs" id="calc-quality">
+            <button class="calc-tab active" data-mult="1">🤖 Базовая генерация</button>
+            <button class="calc-tab" data-mult="1.5">🎥 Сложная режиссура</button>
+            <button class="calc-tab" data-mult="2">✨ Кино-реализм</button>
+          </div>
+        </div>
+
+        <div class="calc-group" style="position: relative;">
+          <label for="calc-duration" style="display:flex; justify-content:space-between; align-items:center;">
+             <span>Укажите хронометраж: <span id="calc-duration-val">30</span> сек.</span>
+             <span class="calc-discount-badge" id="calc-discount-badge">🎁 Скидка -15% за объем</span>
+          </label>
+          <div class="calc-slider-wrapper">
+            <input type="range" id="calc-duration" name="calc-duration" min="5" max="300" step="5" value="30" class="calc-slider">
+            <div class="calc-progress" id="calc-progress"></div>
+          </div>
+          <div class="calc-slider-labels">
+            <span>5 сек</span>
+            <span>5 мин</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-footer">
+        <div class="calc-receipt-wrapper">
+          <div class="calc-receipt">
+             <div class="receipt-row"><span>Формат:</span><strong id="receipt-format">Reels / Shorts</strong></div>
+             <div class="receipt-row"><span>Уровень ИИ:</span><strong id="receipt-mult">Базовая генерация</strong></div>
+             <div class="receipt-row receipt-discount" id="receipt-discount-row"><span>Скидка за объем (>1 мин):</span><strong>-15%</strong></div>
+             <div class="receipt-divider"></div>
+          </div>
+          <div class="calc-result">
+            <span class="calc-result-label">Рекомендованный бюджет:</span>
+            <div class="calc-result-value"><span id="calc-total" class="gradient-text">4 500</span> <span style="font-size:1.5rem; color:var(--text-secondary);">₽</span></div>
+            <div class="calc-result-detail" id="calc-detail">~ 150 ₽ / сек</div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary open-quiz-btn" id="calc-cta-btn">Запросить точную смету</a>
+      </div>
+    </div>
+
+    <div class="pricing-cards">
+      <div class="price-card reveal">
+        <h3>Базовый</h3>
+        <p class="price-desc">Для небольших проектов и социальных сетей</p>
+        <div class="price-value">
+          <span class="amount gradient-text">150</span>
+          <span class="currency">₽</span>
+        </div>
+        <p class="price-unit">за секунду готового видео</p>
+        <ul class="price-features">
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Ролики до 30 секунд
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            1 стиль, 1 концепция
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Музыка из библиотеки
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            2 итерации правок
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Срок от 3 дней
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary" id="pricing-basic-btn">Заказать</a>
+      </div>
+
+      <div class="price-card featured reveal">
+        <span class="price-badge">Популярный</span>
+        <h3>Стандарт</h3>
+        <p class="price-desc">Оптимальный выбор для бизнеса и брендов</p>
+        <div class="price-value">
+          <span class="amount gradient-text">400</span>
+          <span class="currency">₽</span>
+        </div>
+        <p class="price-unit">за секунду готового видео</p>
+        <ul class="price-features">
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Ролики до 3 минут
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Сценарий включён
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Профессиональная озвучка
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Синтетический персонаж
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            5 итераций правок
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Срок от 5 дней
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" id="pricing-standard-btn">Заказать</a>
+      </div>
+
+      <div class="price-card reveal">
+        <h3>Премиум</h3>
+        <p class="price-desc">Для амбициозных проектов без компромиссов</p>
+        <div class="price-value">
+          <span class="amount gradient-text">1000</span>
+          <span class="currency">₽</span>
+        </div>
+        <p class="price-unit">за секунду готового видео</p>
+        <ul class="price-features">
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Без ограничений по длине
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Полный сценарий + раскадровка
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Студийное написание музыки
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Несколько персонажей
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Неограниченные правки
+          </li>
+          <li class="price-feature">
+            <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Персональный менеджер
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary" id="pricing-premium-btn">Заказать</a>
+      </div>
+    </div>
+
+    <p class="reveal" style="text-align:center;margin-top:32px;font-size:0.88rem;color:var(--text-muted);">
+      Итоговая стоимость рассчитывается индивидуально. Заполните бриф — мы пришлём точную смету бесплатно.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================
+     TESTIMONIALS
+     ============================================ -->
+<section class="testimonials" id="testimonials" aria-label="Отзывы клиентов">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">Отзывы</p>
+      <h2 class="section-title reveal">Что говорят <span class="gradient-text">клиенты</span></h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>«Заказывали рекламный ролик для нашего автосалона. Результат превзошёл все ожидания — качество голливудское, а срок и цена в разы лучше, чем у классических студий. Однозначно рекомендую!»</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">М</div>
+          <div>
+            <div class="testimonial-name">Михаил Соколов</div>
+            <div class="testimonial-role">Директор автосалона KGM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>«Снимали клип для нашей группы. Евгений и команда создали невероятный визуальный мир — то, что мы даже не могли себе позволить при обычных съёмках. Теперь только к ним!»</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">А</div>
+          <div>
+            <div class="testimonial-name">Анна Петрова</div>
+            <div class="testimonial-role">Вокалистка, группа «Эфир»</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>«Делали корпоративный имиджевый ролик для банка. Полная вовлечённость команды, чёткие сроки, отличная коммуникация. Ролик набрал тысячи просмотров в первую неделю.»</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">Д</div>
+          <div>
+            <div class="testimonial-name">Дмитрий Волков</div>
+            <div class="testimonial-role">Директор маркетинга, FinanceBank</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FAQ
+     ============================================ -->
+<section class="faq" id="faq" aria-label="Частые вопросы">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label reveal">FAQ</p>
+      <h2 class="section-title reveal">Частые <span class="gradient-text">вопросы</span></h2>
+    </div>
+
+    <div class="faq-list reveal" role="list">
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
+          Сколько стоит создать ролик под ключ?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
+          <div class="faq-answer-inner">
+            Стоимость рассчитывается индивидуально: от 150 до 1000 ₽ за секунду готового видео в зависимости от сложности, стиля, наличия персонажей и озвучки. Заполните бриф — мы пришлём точную смету бесплатно в течение 24 часов.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
+          Как долго делается ролик?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
+          <div class="faq-answer-inner">
+            Короткий ролик (до 30 секунд) — от 3 рабочих дней. Стандартный проект (1–2 минуты) — 5–7 дней. Сложные проекты с кино-форматом — от 2 недель. Это в 3–5 раз быстрее классического продакшна.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
+          Можно ли внести правки после сдачи?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
+          <div class="faq-answer-inner">
+            Да, каждый тариф включает несколько итераций правок. В тарифе «Базовый» — 2 итерации, «Стандарт» — 5, «Премиум» — неограниченно. Мы работаем до вашего полного утверждения.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
+          Нужен ли мне готовый сценарий?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
+          <div class="faq-answer-inner">
+            Нет, сценарий не обязателен. Достаточно идеи или даже задачи: «реклама нашего продукта для аудитории 25–40 лет, стиль — технологичный». Мы сами разработаем концепцию и сценарий. Если сценарий у вас уже есть — отлично, работаем по нему.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
+          Каким будет качество видео?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
+          <div class="faq-answer-inner">
+            Мы используем лучшие современные AI-модели (Sora, Runway, Kling, Veo и другие) и доводим результат до профессионального уровня в постпродакшне. Финальный ролик сдаётся в 4K или Full HD в любом нужном формате.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" id="faq-q6" aria-expanded="false" aria-controls="faq-a6">
+          Работаете ли вы с клиентами из других городов?
+          <span class="faq-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6">
+          <div class="faq-answer-inner">
+            Да, работаем полностью онлайн с клиентами из любого города России и из-за рубежа. Брифинг, согласование, сдача — всё через мессенджеры и видеозвонки. Физическое присутствие не требуется.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CONTACT
+     ============================================ -->
+<section class="contact" id="contact" aria-label="Контакты и форма заявки">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-info reveal-left">
+        <p class="section-label">Свяжитесь с нами</p>
+        <h2>Готовы обсудить<br><span class="gradient-text">ваш проект?</span></h2>
+        <p class="contact-desc">
+          Расскажите о вашей задаче — и мы бесплатно рассчитаем стоимость и сроки. Отвечаем в течение 2 часов в рабочее время.
+        </p>
+
+        <div class="contact-methods">
+          <a href="tel:+79165219649" class="contact-method" id="contact-phone">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.1A16 16 0 0014.9 15.09l.46-.46a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-method-label">Телефон</div>
+              <div class="contact-method-value">+7 (916) 521-96-49</div>
+            </div>
+          </a>
+
+          <a href="https://t.me/zoomexpert" target="_blank" rel="noopener noreferrer" class="contact-method" id="contact-telegram">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+            </div>
+            <div>
+              <div class="contact-method-label">Telegram</div>
+              <div class="contact-method-value">@zoomexpert</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/79165219649" target="_blank" rel="noopener noreferrer" class="contact-method" id="contact-whatsapp">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </div>
+            <div>
+              <div class="contact-method-label">WhatsApp</div>
+              <div class="contact-method-value">+7 (916) 521-96-49</div>
+            </div>
+          </a>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact-method-label">Режим работы</div>
+              <div class="contact-method-value">Ежедневно 10:00 — 22:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal-right">
+        <h3>Оставить заявку</h3>
+        <p class="form-desc">Заполните форму — мы свяжемся в течение 2 часов и рассчитаем стоимость бесплатно</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Ваше имя *</label>
+              <input class="form-input" type="text" id="form-name" name="name" placeholder="Иван Иванов" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-phone">Телефон / Telegram *</label>
+              <input class="form-input" type="text" id="form-phone" name="phone" placeholder="+7 (900) 000-00-00" required autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-type">Тип проекта</label>
+            <select class="form-select" id="form-type" name="type">
+              <option value="">Выберите тип ролика</option>
+              <option value="ad">Рекламный ролик</option>
+              <option value="clip">Музыкальный клип</option>
+              <option value="brand">Бренд-контент</option>
+              <option value="cinema">Короткометражное кино</option>
+              <option value="teaser">Тизер</option>
+              <option value="avatar">Синтетический персонаж</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-budget">Бюджет</label>
+            <select class="form-select" id="form-budget" name="budget">
+              <option value="">Укажите примерный бюджет</option>
+              <option value="50k">До 50 000 ₽</option>
+              <option value="100k">50 000 — 100 000 ₽</option>
+              <option value="300k">100 000 — 300 000 ₽</option>
+              <option value="300k+">Свыше 300 000 ₽</option>
+              <option value="discuss">Обсудим</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-message">Опишите задачу</label>
+            <textarea class="form-textarea" id="form-message" name="message" placeholder="Расскажите о вашем проекте: что нужно снять, для какой аудитории, есть ли примеры..."></textarea>
+          </div>
+
+          <p style="font-size:0.75rem;color:var(--text-muted);margin-bottom:16px;">
+            Нажимая кнопку, вы соглашаетесь с <a href="oferta.html" style="color:var(--accent-purple-light);">офертой</a> и политикой конфиденциальности
+          </p>
+
+          <button type="submit" class="btn btn-primary" id="form-submit-btn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <div class="logo-icon">J</div>
+          <span>Jen<span class="nav-logo-ai">AI</span></span>
+        </a>
+        <p>AI-продакшн студия нового поколения. Создаём видеоролики, клипы и рекламу с помощью искусственного интеллекта — быстрее и дешевле классического продакшна.</p>
+        <p style="margin-top:12px;font-size:0.78rem;color:var(--text-muted);">ИП Бурлаков Евгений Владимирович</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Услуги</h4>
+        <a href="#services">AI Реклама</a>
+        <a href="#services">AI Клипы</a>
+        <a href="#services">AI Кино</a>
+        <a href="#services">Бренд-контент</a>
+        <a href="#services">AI Тизеры</a>
+        <a href="#services">Синтетические персонажи</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Компания</h4>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#process">Как работаем</a>
+        <a href="#pricing">Цены</a>
+        <a href="#faq">FAQ</a>
+        <a href="oferta.html">Оферта</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <a href="tel:+79165219649">+7 (916) 521-96-49</a>
+        <a href="https://t.me/zoomexpert" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a href="https://wa.me/79165219649" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://max.ru/+79165219649" target="_blank" rel="noopener noreferrer">MAX</a>
+        <a href="#contact">Оставить заявку</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 JenAI. Все права защищены.</p>
+      <div class="footer-social" aria-label="Социальные сети">
+        <a href="https://t.me/zoomexpert" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+        </a>
+        <a href="https://wa.me/79165219649" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="https://max.ru/+79165219649" target="_blank" rel="noopener noreferrer" aria-label="MAX">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 12l4-4 4 4M12 8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scroll-top" aria-label="Наверх">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- Social Proof Popup -->
+<div class="social-proof-popup" id="social-proof-popup" aria-hidden="true">
+  <div class="social-proof-icon">🔥</div>
+  <div class="social-proof-content">
+    <div class="social-proof-title" id="sp-name">Александр, г. Москва</div>
+    <div class="social-proof-action" id="sp-action">Только что заказал AI-рекламу</div>
+    <div class="social-proof-time" id="sp-time">2 минуты назад</div>
+  </div>
+</div>
+
+<!-- Sticky Mobile CTA -->
+<div class="mobile-sticky-cta reveal" id="mobile-sticky-cta">
+  <button class="btn btn-primary open-quiz-btn">Рассчитать проект</button>
+</div>
+
+<!-- ============================================
+     QUIZ MODAL
+     ============================================ -->
+<div class="modal-overlay" id="quiz-modal" aria-hidden="true">
+  <div class="modal-container quiz-container">
+    <button class="modal-close" id="quiz-close" aria-label="Закрыть квиз">&times;</button>
+    
+    <div class="quiz-header">
+      <div class="quiz-badge">Смета за 5 минут</div>
+      <h2>Рассчитайте ваш проект</h2>
+    </div>
+
+    <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-progress"></div></div>
+    
+    <!-- Step 1 -->
+    <div class="quiz-step active" id="quiz-step-1">
+      <h3>1. Какая цель вашего видео?</h3>
+      <div class="quiz-options">
+        <label class="quiz-option"><input type="radio" name="q_purpose" value="Рекламный ролик"> <span>Рекламный ролик</span></label>
+        <label class="quiz-option"><input type="radio" name="q_purpose" value="Shorts / Reels"> <span>Shorts / Reels (Пачка)</span></label>
+        <label class="quiz-option"><input type="radio" name="q_purpose" value="Музыкальный клип"> <span>Музыкальный клип</span></label>
+        <label class="quiz-option"><input type="radio" name="q_purpose" value="Спецпроект"> <span>Спецпроект / Другое</span></label>
+      </div>
+      <button class="btn btn-primary btn-next" data-next="2" disabled>Далее</button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="quiz-step" id="quiz-step-2">
+      <h3>2. Какой планируется хронометраж?</h3>
+      <div class="quiz-options grid-options">
+        <label class="quiz-option"><input type="radio" name="q_duration" value="До 15 сек"> <span>До 15 сек</span></label>
+        <label class="quiz-option"><input type="radio" name="q_duration" value="До 1 минуты"> <span>До 1 минуты</span></label>
+        <label class="quiz-option"><input type="radio" name="q_duration" value="Больше минуты"> <span>Больше минуты</span></label>
+      </div>
+      <div class="quiz-actions">
+        <button class="btn btn-secondary btn-prev" data-prev="1">Назад</button>
+        <button class="btn btn-primary btn-next" data-next="3" disabled>Далее</button>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="quiz-step" id="quiz-step-3">
+      <h3>3. Куда отправить смету?</h3>
+      <p style="color: var(--text-secondary); margin-top: -10px; margin-bottom: 20px; font-size: 0.95rem;">Оставьте контакт, и мы вышлем 3 варианта расчета в течение 15 минут.</p>
+      <div class="quiz-form">
+        <input type="text" id="quiz-contact" placeholder="Ваш Telegram (@username) или Email" required class="quiz-input">
+      </div>
+      <div class="quiz-actions">
+        <button class="btn btn-secondary btn-prev" data-prev="2">Назад</button>
+        <button class="btn btn-primary" id="quiz-submit">Получить смету</button>
+      </div>
+    </div>
+    
+    <!-- Success Step -->
+    <div class="quiz-step success-step" id="quiz-step-success">
+      <div class="success-icon" style="font-size: 3rem; margin-bottom: 20px;">✨</div>
+      <h3>Данные отправлены!</h3>
+      <p style="color: var(--text-secondary);">Мы скоро свяжемся с вами и предложим лучшие варианты решения вашей задачи.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     EXIT INTENT POPUP (Lead Magnet)
+     ============================================ -->
+<div class="modal-overlay" id="exit-modal" aria-hidden="true">
+  <div class="modal-container exit-container">
+    <button class="modal-close" id="exit-close" aria-label="Закрыть">&times;</button>
+    <div class="exit-content" style="text-align: center;">
+      <div class="hero-badge" style="display:inline-flex; margin-bottom:20px;">
+        <span class="badge-dot"></span>
+        Подарок
+      </div>
+      <h3 style="font-size: 1.8rem; margin-bottom: 10px;">Стойте! Заберите наш гайд</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 24px;">«Как бизнесу сэкономить до 1 млн рублей на продакшене видео с помощью нейросетей»</p>
+      <div class="exit-form" style="display: flex; flex-direction: column; gap: 12px;">
+        <input type="text" id="exit-contact" class="quiz-input" placeholder="Куда прислать PDF? (Telegram/Email)">
+        <button class="btn btn-primary" id="exit-submit">Получить гайд бесплатно</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal-overlay" id="video-modal" aria-hidden="true">
+  <div class="video-modal-container">
+    <button class="video-close-btn" id="video-close" aria-label="Закрыть">&times;</button>
+    <video id="modal-video-player" controls playsinline preload="metadata"></video>
+  </div>
+</div>
+
+<!-- UI Sounds -->
+<audio id="sound-hover" preload="auto" src="https://assets.mixkit.co/active_storage/sfx/3124/3124-preview.mp3"></audio>
+<audio id="sound-click" preload="auto" src="https://assets.mixkit.co/active_storage/sfx/2573/2573-preview.mp3"></audio>
+
+<script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
