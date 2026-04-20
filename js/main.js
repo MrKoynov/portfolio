@@ -991,7 +991,8 @@ if (videoModal && modalVideoPlayer) {
     item.addEventListener('click', () => {
       const vid = item.querySelector('.portfolio-hover-vid');
       if (vid && vid.src) {
-        modalVideoPlayer.src = vid.src;
+          if(!vid.paused) vid.pause();
+          modalVideoPlayer.src = vid.src;
         videoModal.classList.add('active');
         document.body.style.overflow = 'hidden';
         modalVideoPlayer.play().catch(e => console.log('Playback blocked', e));
