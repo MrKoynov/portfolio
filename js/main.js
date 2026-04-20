@@ -985,18 +985,30 @@ portfolioVids.forEach(vid => {
 // Video Modal Logic
 const videoModal = document.getElementById('video-modal');
 const modalVideoPlayer = document.getElementById('modal-video-player');
+const modalIframePlayer = document.getElementById('modal-iframe-player');
 const videoCloseBtn = document.getElementById('video-close');
 const allPortfolioItems = document.querySelectorAll('.portfolio-item');
 
-if (videoModal && modalVideoPlayer) {
+if (videoModal && (modalVideoPlayer || modalIframePlayer)) {
   allPortfolioItems.forEach(item => {
     item.addEventListener('click', () => {
+      const vimeoId = item.dataset.vimeoId;
       const vid = item.querySelector('.portfolio-hover-vid');
-      if (vid && vid.src) {
-          if(!vid.paused) vid.pause();
-          modalVideoPlayer.src = vid.src;
-        videoModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+      
+      videoModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      if (vimeoId && modalIframePlayer) {
+        // Vimeo path
+        modalVideoPlayer.style.display = 'none';
+        modalIframePlayer.style.display = 'block';
+        modalIframePlayer.src = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&title=0&byline=0&portrait=0`;
+      } else if (vid && vid.src && modalVideoPlayer) {
+        // Fallback local MP4 path
+        if (modalIframePlayer) modalIframePlayer.style.display = 'none';
+        modalVideoPlayer.style.display = 'block';
+        if(!vid.paused) vid.pause();
+        modalVideoPlayer.src = vid.src;
         modalVideoPlayer.play().catch(e => console.log('Playback blocked', e));
       }
     });
@@ -1012,9 +1024,18 @@ if (videoModal && modalVideoPlayer) {
   function closeVideoModal() {
     videoModal.classList.remove('active');
     document.body.style.overflow = '';
-    modalVideoPlayer.pause();
-    modalVideoPlayer.removeAttribute('src');
-    modalVideoPlayer.load();
+    
+    // Stop local video
+    if (modalVideoPlayer) {
+        modalVideoPlayer.pause();
+        modalVideoPlayer.removeAttribute('src');
+        modalVideoPlayer.load();
+    }
+    
+    // Stop iframe video (Vimeo)
+    if (modalIframePlayer) {
+        modalIframePlayer.src = '';
+    }
   }
 }
 
