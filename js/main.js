@@ -968,6 +968,8 @@ if (cursorDot && cursorRing) {
 // 3. Portfolio Hover Videos Autoplay
 const portfolioVids = document.querySelectorAll('.portfolio-hover-vid');
 portfolioVids.forEach(vid => {
+    vid.muted = true;
+    vid.volume = 0;
   const item = vid.closest('.portfolio-item');
   if (item) {
     item.addEventListener('mouseenter', () => {
@@ -1011,7 +1013,8 @@ if (videoModal && modalVideoPlayer) {
     videoModal.classList.remove('active');
     document.body.style.overflow = '';
     modalVideoPlayer.pause();
-    modalVideoPlayer.src = '';
+    modalVideoPlayer.removeAttribute('src');
+    modalVideoPlayer.load();
   }
 }
 
@@ -1076,3 +1079,6 @@ if (typeof Lenis !== 'undefined') {
   }
   requestAnimationFrame(lenisRaf);
 }
+
+
+const hv = document.querySelector('.hero-video-bg'); if(hv){ hv.muted=true; hv.volume=0; }
