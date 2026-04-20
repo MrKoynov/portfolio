@@ -784,6 +784,7 @@ input, textarea, select {
   padding: 28px;
   opacity: 0;
   transition: opacity var(--duration-normal) ease;
+  z-index: 20;
 }
 
 .portfolio-item:hover .portfolio-overlay {
@@ -821,7 +822,7 @@ input, textarea, select {
   opacity: 0;
   transition: all var(--duration-normal) var(--ease-smooth);
   backdrop-filter: blur(8px);
-  z-index: 10;
+  z-index: 30;
 }
 
 .portfolio-item:hover .portfolio-play {
